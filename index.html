@@ -4,25 +4,387 @@
 <head>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-
+  <link type="text/css" rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css"
+    media="screen,projection" />
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/f3e870c332.js" crossorigin="anonymous"></script>
+  <!--<script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>-->
   <script defer src="./js/index.js"></script>
 </head>
 
 <body>
+  <header>
+    <!--NAV BAR-->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a id="logo" href="./index.html" class="brand-logo left">
+            <i class="fas fa-laptop-code fa-sm"></i> Encipro</a>
+          <a href="" data-target="slide-out" class="sidenav-trigger right show-on-small hide-on-med-only"><i
+              class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right show-on-large hide-on-med-only hide-on-small-only">
+            <li class='acti'><a href="./index.html">Inicio</a></li>
+            <li><a href="#publicaciones">Publicaciones</a></li>
+            <li><a href="#cursos">Noticias</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#">Sobre mi</a></li>
+          </ul>
 
-  <div class="container">
-    <h1>Hola mundo</h1>
-  </div>
+          <ul id="nav-icons" class="right show-on-medium hide-on-large-only hide-on-small-only">
+            <li><a href="./index.html"><i class="fas fa-home"></i></a></li>
+            <!--Inicio-->
+            <li><a href="#publicaciones"><i class="fas fa-file-code"></i></a></li>
+            <!--Publicaciones-->
+            <li><a href="#cursos"><i class="fas fa-book-reader"></i></a></li>
+            <!--Noticias-->
+            <li><a href="#cursos"><i class="fas fa-chalkboard-teacher"></i></a></li>
+            <!--Cursos-->
+            <li><a href="#"><i class="fas fa-id-badge"></i></a></li>
+            <!--Sobre mi-->
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <h3 class="center-align"> <i class="fas fa-laptop-code fa-sm "></i> Encipro</h3>
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a class="waves-effect" href="#publicaciones"> <i class="fas fa-file-code"> </i>Publicaciones</a></li>
+      <li><a class="waves-effect" href="#cursos"> <i class="fas fa-book-reader"></i>Noticias</a></li>
+      <li><a class="waves-effect" href="#cursos"><i class="fas fa-chalkboard-teacher"></i> Cursos</a></li>
+      <li><a class="waves-effect" href="#"><i class="fas fa-id-badge"></i>Sobre mi</a></li>
+    </ul>
+  </header>
+  <main>
+    <!--PARALLAX 1-->
+    <div class="parallax-container">
+
+      <br>
+      <h1 id="title" class="center-align"> <strong> Enciclopedia del programador </strong></h1>
+      <div class="container col s4">
+        <br>
+        <blockquote>
+          <p>La tecnología no es nada. Lo importante es que tengas fe en la gente, que sean básicamente buenas e
+            inteligentes y si les dás herramientas, harán cosas maravillosas con ellas.</p>
+          <footer> Steve Jobs</footer>
+        </blockquote>
+        <br>
+      </div>
+      <div id="div-button" class="center-align">
+        <a href="#publicaciones" class="waves-effect waves-light btn-inicio btn-large">
+          <i class="fas fa-meteor"></i>
+          Explorar
+          contenido</a>
+      </div>
+      <div class="parallax"><img src="./images/parallax4.jpg">
+      </div>
+    </div>
+
+    <!--SECCIÓN PUBLICACIONES-->
+
+    <div id="publicaciones" class="section">
+      <div class="row container">
+        <h2>Publicaciones por categorías</h2>
+        <p> Puedes elegir un contenido para continuar...</p>
+
+        <!--CARD ONE-->
+        <div class="col s12 m6 l4 xl4">
+
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./images/card2.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Module Bundler<i
+                  class="material-icons right">more_vert</i></span>
+              <br>
+              <div class="row center-align">
+                <div class="col s3">
+                  <a href=""> Parcel
+                    <img src="./images/parcel.png" alt="Parcel">
+                  </a>
+                </div>
+
+                <div class="col s3">
+                  <a href=""> Rollup
+                    <img src="./images/rollup.png" alt="Rollup">
+                  </a>
+                </div>
+
+                <div class="col s3">
+                  <a href="">Fusebox
+                    <img src="./images/fusebox.png" alt="Fusebox">
+                  </a>
+                </div>
+                <div class="col s3">
+                  <a href="">Webpack
+                    <img src="./images/webpack.png" alt="Rollup">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Module Bundler<i
+                  class="material-icons right">close</i></span>
+              <p>Son herramientas para que permiten empaquetar los módulos Javascript y así
+                la aplicación funcione correctamente.</p>
+              <p class="center-align">Beneficios</p>
+              <p><i class="material-icons right">check_circle</i>Modulariza las secciones del proyecto</p>
+              <p><i class="material-icons right">check_circle</i>Automatiza tareas repetitivas</p>
+              <a href="">> Seguir leyendo...</a>
+            </div>
+          </div>
+        </div>
+        <!--CARD TWO-->
+        <div class="col s12 m6 l4 xl4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./images/card1.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Preprocesadores
+                <i class="material-icons right">more_vert</i></span>
+              <br>
+              <div class="row center-align">
+                <div class="col s3">
+                  <a href="">
+                    Sass<img src="./images/sass.png" alt="Sass"> <br>
+                  </a>
+                </div>
+
+                <div class="col s3">
+                  <a href="">
+                    PostCSS <img src="./images/PostCSS.png" alt="PostCSS">
+                  </a>
+                </div>
+
+                <div class="col s3">
+                  <a href="">
+                    LESS <img src="./images/less.png" alt="LESS">
+                  </a>
+                </div>
+                <div class="col s3">
+                  <a href="">
+                    Stylus <img src="./images/stylus.png" alt="Stylus">
+                  </a>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Preprocesadores<i
+                  class="material-icons right">close</i></span>
+              <p>Un preprocesador CSS es un programa que te permite generar CSS a partir de la syntax única del
+                preprocesador.</p>
+              <p class="center-align">Beneficios</p>
+              <p><i class="material-icons right">check_circle</i>Uso de variables</p>
+              <p><i class="material-icons right">check_circle</i>Reducción de código repetitivo</p>
+              <a href="">> Seguir leyendo...</a>
+            </div>
+          </div>
+        </div>
+
+        <!--CARD THREE-->
+
+        <div class="col s12 m6 l4 xl4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./images/card3.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Lenguajes Front-end<i
+                  class="material-icons right">more_vert</i></span>
+              <br>
+              <div class="row center-align">
+                <div class="col s3"></div>
+                <div class="col s3">
+                  <a href=""> JS
+                    <img src="./images/javascript.png" alt="Javascript">
+                  </a>
+                </div>
+
+                <div class="col s3">
+                  <a href=""> CSS
+                    <img src="./images/css.png" alt="CSS">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Lenguajes Front-end<i
+                  class="material-icons right">close</i></span>
+              <p>El Frontend es la parte de un programa o dispositivo a la que un usuario puede acceder directamente.
+                Son
+                todas las tecnologías de diseño y desarrollo web que corren en el navegador y que se encargan de la
+                interactividad con los usuarios</p>
+              <p class="center-align">¿Cómo funciona?</p>
+
+              <a href="">> Seguir leyendo...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--PARALLAX 2-->
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="./images/parallax22.jpg">
+
+      </div>
+    </div>
+
+    <!--SECCIÓN CURSOS-->
+
+    <div id="cursos" class="section color-cursos">
+      <div class="row container center-align">
+        <h2>Cursos de especialización</h2>
+        <div class="row">
+          <form class="col s12 m12 l12 xl12">
+            <div class="input-field col s12">
+              <div class="col s9 m6 l6 xl6 offset-m2 offset-l2 offset-xl2">
+                <input placeholder="Busca un curso disponible para ti..." id="search" type="text" class="validate">
+              </div>
+              <div class="col s2">
+                <a class="waves-effect waves-light btn btn-inicio"> <i class="fas fa-search"></i> Buscar</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="row container">
+        <div class="col s12 m6 l4 xl4">
+          <div class="div-courses">
+            <img src="./images/video-marketing.png" alt="">
+            <a href="#" class="a_course"> Producción Audiovisual</a>
+
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4 xl4">
+          <div class="div-courses">
+
+            <img src="./images/marketing-en-linea.png" alt="">
+            <a href="#" class="a_course"> Marketing</a>
+
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4 xl4">
+          <div class="div-courses">
+
+            <img src="./images/desarrollo-web.png" alt="">
+            <a href="#" class="a_course"> Desarrollo e Ingeniería</a>
+
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4 xl4">
+          <div class="div-courses">
+
+            <img src="./images/rueda-de-color.png" alt="">
+            <a href="#" class="a_course"> Diseño Gráfico</a>
+
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4 xl4">
+          <div class="div-courses">
+
+            <img src="./images/cuenta.png" alt="">
+            <a href="#" class="a_course"> Negocios y emprendimiento</a>
+
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4 xl4">
+          <div class="div-courses">
+            <img src="./images/redaccion-de-contenido.png" alt="">
+            <a href="#" class="a_course">Desarrollo UX</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-action-btn direction-top">
+      <a id="info" class="waves-effect waves-light btn-large btn-floating"><i
+          class="material-icons">perm_device_information</i></a>
+    </div>
+
+    <!-- Tap Target Structure -->
+    <div id="tap-target" class="tap-target" data-target="info">
+      <div class="tap-target-content">
+        <p> <strong>
+            <h3 class="right-align"> Info Device </h3>
+          </strong></p>
+        <div id="texto-info" class="center-align"></div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12 m6 xl6">
+          <h5>Universidad Oberta de Catalunya</h5>
+          <p>Trabajo realizado para la asignatura de Html y Css - Semestre 2</p>
+        </div>
+        <div class="col l6 s12 m6 xl6">
+          <br>
+          <br>
+          <div class="row">
+            <div class="col s4 m4 l4 xl4">
+              <div class="div-links-footer center-align">
+                <img src="./images/facebook.png" alt="Facebook">
+                <a href="#"> <small> Facebook </small></a>
+              </div>
+            </div>
+
+            <div class="col s4 m4 l4 xl4">
+              <div class="div-links-footer center-align">
+                <img src="./images/gorjeo2.png" alt="Twitter">
+                <a href="#"> <small>Twitter</small></a>
+              </div>
+            </div>
+
+            <div class="col s4 m4 l4 xl4">
+              <div class="div-links-footer center-align">
+                <img src="./images/youtube.png" alt="Youtube">
+                <a href="#"> <small>Youtube </small></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright center-align">
+      <div class="container">
+        © 2020 Copyright Universidad Oberta de Catalunya. Diana Morocho
+
+      </div>
+    </div>
+  </footer>
+
+
+
 
 
 
   <!--JavaScript at end of body for optimized loading-->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
 </body>
 
 </html>
