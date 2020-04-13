@@ -31,6 +31,10 @@ h6{
   font-size: 1vw;
 }
 
+p{
+  font-size:1.1rem;
+}
+
 blockquote{
   border-left: 5px solid var(--color_blue);
 }
@@ -41,6 +45,15 @@ blockquote{
   background-color: var(--color_blue_dark);
   color: var(--color_beige);  
 }
+
+
+.nav-wrapper-breadcrumb{  
+  background-color: var(--color_footer);  
+}
+.nav-wrapper-breadcrumb a{   
+  color: var(--color_blue_dark);  
+}
+
 
 #title{
   font-family: 'Pacifico', cursive;
@@ -62,8 +75,13 @@ blockquote{
   min-height: 380px;  
 }
 
-.card-image>img, a>img{
+.card-image>img, a>img, .item-concept>img{
   width: 100%;
+  height: auto;
+}
+
+.items-concept{
+  width: 50%;
   height: auto;
 }
 
@@ -169,6 +187,8 @@ blockquote{
     height: auto;
     min-height: 550px;  
   }
+
+  
 
   
 }
