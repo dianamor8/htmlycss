@@ -38,6 +38,7 @@ document.getElementById("info").addEventListener("click", function (event) {
 
 
 
+
 /*window.addEventListener("resize", function () {
     if(window.innerWidth<=993){
     }

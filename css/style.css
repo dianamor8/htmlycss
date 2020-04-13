@@ -11,7 +11,6 @@
 }
 
 
-
 h1{
   font-size: 7vw;
 }
@@ -171,6 +170,26 @@ blockquote{
 
 #info{
   background-color: var(--color_blue);
+}
+
+.div-code{
+  background-color: var(--color_footer);
+  margin-left: 12px;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+}
+
+.div-code>p>code, .div-code>pre>code{
+  font-family: 'Inconsolata', monospace;
+  color: var(--color_blue_dark);
+}
+
+pre{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.color-red{
+  color: brown;
 }
 
 /*Media query para dispositivos con viewport máximo de 600px*/
