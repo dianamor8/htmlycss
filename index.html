@@ -11,7 +11,9 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css">
+
   <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js" crossorigin="anonymous"></script>
+
   <script defer src="./js/index.js"></script>
 </head>
 
@@ -148,7 +150,10 @@
         <div class="col s12 m6 l4 xl4">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="./images/card1.jpg">
+              <img class="activator" srcset="
+                ./images/card1_responsive/card1_responsive_scale_600.jpg 1200w,                 
+                ./images/card1_responsive/card1_responsive_scale_562.jpg 562w,                
+                ./images/card1_responsive/card1_responsive_scale_389.jpg 389w">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">
@@ -202,8 +207,10 @@
               <img class="activator" src="./images/card3.jpg">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Lenguajes Front-end<i
-                  class="material-icons right">more_vert</i></span>
+              <span class="card-title activator grey-text text-darken-4">
+                <a href="./pages/category_preprocesadores.html">Lenguajes Front-end</a>
+                <i class="material-icons right">more_vert</i></span>
+              <br>
               <br>
               <div class="row center-align">
                 <div class="col s3"></div>
