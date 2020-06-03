@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var instances_sides = M.Sidenav.init(sidesnav, { edge: "left" });
     //Cargado de parallax
     var parallax = document.querySelectorAll('.parallax');
-    var instances_parallax = M.Parallax.init(parallax);
+    console.log(parallax);
+    var instances_parallax = M.Parallax.init(parallax[0]);
+    var instances_parallax_2 = M.Parallax.init(parallax[1]);
+
     //Cargado de tap target
     var tap_target = document.querySelectorAll('.tap-target');
     var instances_tap_target = M.TapTarget.init(tap_target);
